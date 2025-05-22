@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #800080;
+    color: white;
+}
+
+.contenido {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: black;
+    text-align: left; /* 👈 Texto alineado a la izquierda */
+}
+
+.contenido p,
+.contenido ul,
+.contenido li {
+    text-align: left; /* 👈 Aplica a párrafos y listas */
+}
+
+/* 🔸 TÍTULOS en amarillo y centrados */
+h1, h2 {
+    color: #FFD700;
+    text-align: center;
+}
+
+.galeria, .imagenes-adicionales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto 0 auto;
+    max-width: 900px;
+}
+
+.galeria img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.imagenes-adicionales img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    background-color: #6f0895;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+main {
+    padding: 20px;
+    text-align: left; /* 👈 Cambiado de center a left */
+}
+
+footer {
+    background-color: #81059d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* 🔁 MEDIA QUERY para pantallas pequeñas (responsive) */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img,
+    .imagenes-adicionales img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
